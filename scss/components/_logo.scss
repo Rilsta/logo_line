@@ -1,0 +1,53 @@
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width:600px;
+  background: white;
+  h1{
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    animation: bounce-letter 1s 3s alternate 6;
+  }
+  .circle{
+    position: absolute;
+    @include position($top: $dot-position-height, $left: 7em);
+    @include dimension($height, $width);
+    background: black;
+  }
+  .circle1{
+    position: absolute;
+    @include position($left: 2.5em);
+    @include dimension($height, $width);
+    animation: bounce 1s 1.25s cubic-bezier(.1,.25,.1,1) alternate 6;
+  }
+  .circle2{
+    position: absolute;
+    @include position($left: 3em);
+    @include dimension($height, $width);
+    animation: bounce 1s 1.5s cubic-bezier(.1,.25,.1,1) alternate 6;
+  }
+  .circle3{
+    position: absolute;
+    @include position($left: 3.5em);
+    @include dimension($height, $width);
+    animation: bounce 1s 1.75s cubic-bezier(.1,.25,.1,1) alternate 6;
+  }
+
+  @keyframes bounce {
+    100% {
+      left: 10em;
+      background: #369;
+    }
+    10%  {
+      @include dimension(0.25em, 0.33em);
+      background: purple;
+    }
+    0%  {
+      @include dimension(0.33em, 0.25em);
+      background: chartreuse;
+    }
+  }
+}

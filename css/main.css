@@ -1,0 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 600px;
+  background: white; }
+  .logo h1 {
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    animation: bounce-letter 1s 3s alternate 6; }
+  .logo .circle {
+    position: absolute;
+    position: absolute;
+    top: 63px;
+    left: 7em;
+    height: 0.25em;
+    width: 0.25em;
+    border-radius: 50%;
+    background: black; }
+  .logo .circle1 {
+    position: absolute;
+    position: absolute;
+    left: 2.5em;
+    height: 0.25em;
+    width: 0.25em;
+    border-radius: 50%;
+    animation: bounce 1s 1.25s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
+  .logo .circle2 {
+    position: absolute;
+    position: absolute;
+    left: 3em;
+    height: 0.25em;
+    width: 0.25em;
+    border-radius: 50%;
+    animation: bounce 1s 1.5s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
+  .logo .circle3 {
+    position: absolute;
+    position: absolute;
+    left: 3.5em;
+    height: 0.25em;
+    width: 0.25em;
+    border-radius: 50%;
+    animation: bounce 1s 1.75s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
+@keyframes bounce {
+  100% {
+    left: 10em;
+    background: #369; }
+  10% {
+    height: 0.25em;
+    width: 0.33em;
+    border-radius: 50%;
+    background: purple; }
+  0% {
+    height: 0.33em;
+    width: 0.25em;
+    border-radius: 50%;
+    background: chartreuse; } }
+
+/*# sourceMappingURL=main.css.map */
