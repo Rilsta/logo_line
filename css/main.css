@@ -64,6 +64,16 @@ a {
   background: #f4f4f4;
   transition: all 300ms; }
 
+.login-form .login-field, .login-form .password-field, .login-form .sign-in-button {
+  border: none;
+  width: 60%;
+  padding: 10px;
+  margin: 5px;
+  color: #f4f4f4;
+  text-align: center;
+  text-shadow: 1px 1px #212121;
+  letter-spacing: 1px; }
+
 .logo {
   display: flex;
   align-items: center;
@@ -72,7 +82,7 @@ a {
   width: 150px;
   margin: 0 30px; }
   .logo h1 {
-    color: #212121;
+    color: #f4f4f4;
     font-style: italic;
     font-family: 'Lobster Two', cursive;
     font-size: 3em;
@@ -85,7 +95,7 @@ a {
     height: 0.25em;
     width: 0.25em;
     border-radius: 50%;
-    background: #212121; }
+    background: #f4f4f4; }
   .logo .circle1 {
     position: absolute;
     position: absolute;
@@ -126,11 +136,11 @@ a {
     background: #443ea8; } }
 @keyframes colorShift {
   100% {
-    color: #212121; }
+    color: #f4f4f4; }
   50% {
     color: #b0284c; }
   0% {
-    color: #212121; } }
+    color: #f4f4f4; } }
 .button {
   border: none;
   padding: 10px;
@@ -150,5 +160,33 @@ a {
   letter-spacing: 3px;
   background: #443ea8;
   color: #f4f4f4; }
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-top: 4em; }
+  .login-form .login-field {
+    background: rgba(176, 40, 76, 0.5); }
+    .login-form .login-field:focus {
+      outline: none;
+      background: rgba(176, 40, 76, 0.7); }
+  .login-form .password-field {
+    background: rgba(143, 72, 168, 0.5); }
+    .login-form .password-field:focus {
+      outline: none;
+      background: rgba(143, 72, 168, 0.7); }
+  .login-form .sign-in-button {
+    width: 25%;
+    background: rgba(68, 62, 168, 0.5); }
+    .login-form .sign-in-button:hover {
+      background: rgba(68, 62, 168, 0.7); }
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/cafe.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
