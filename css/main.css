@@ -79,59 +79,60 @@ a {
   align-items: center;
   position: relative;
   height: 100px;
-  width: 150px;
-  margin: 0 30px; }
+  width: 150px; }
   .logo h1 {
     color: #f4f4f4;
     font-style: italic;
     font-family: 'Lobster Two', cursive;
-    font-size: 3em;
+    font-size: 4em;
+    padding: 0.5em;
+    margin-top: 0.5em;
     animation: colorShift 6s 1.25s ease-in-out alternate 1; }
   .logo .circle {
     position: absolute;
     position: absolute;
-    top: 63px;
+    top: 80px;
     left: 7em;
-    height: 0.25em;
-    width: 0.25em;
+    height: 0.5em;
+    width: 0.5em;
     border-radius: 50%;
     background: #f4f4f4; }
   .logo .circle1 {
     position: absolute;
     position: absolute;
-    left: 2.5em;
-    height: 0.25em;
-    width: 0.25em;
+    left: 5em;
+    height: 0.5em;
+    width: 0.5em;
     border-radius: 50%;
     animation: bounce 1s 1.25s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
   .logo .circle2 {
     position: absolute;
     position: absolute;
-    left: 3em;
-    height: 0.25em;
-    width: 0.25em;
+    left: 5.75em;
+    height: 0.5em;
+    width: 0.5em;
     border-radius: 50%;
     animation: bounce 1s 1.5s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
   .logo .circle3 {
     position: absolute;
     position: absolute;
-    left: 3.5em;
-    height: 0.25em;
-    width: 0.25em;
+    left: 6.5em;
+    height: 0.5em;
+    width: 0.5em;
     border-radius: 50%;
     animation: bounce 1s 1.75s cubic-bezier(0.1, 0.25, 0.1, 1) alternate 6; }
 @keyframes bounce {
   100% {
-    left: 10em;
+    left: 15em;
     background: #8f48a8; }
   10% {
-    height: 0.25em;
-    width: 0.33em;
+    height: 0.5em;
+    width: 0.75em;
     border-radius: 50%;
     background: #b0284c; }
   0% {
-    height: 0.33em;
-    width: 0.25em;
+    height: 0.75em;
+    width: 0.5em;
     border-radius: 50%;
     background: #443ea8; } }
 @keyframes colorShift {

@@ -4,12 +4,13 @@
   position: relative;
   height: 100px;
   width:150px;
-  margin: 0 30px;
   h1{
     color: $white;
     font-style: italic;
     font-family: 'Lobster Two', cursive;
-    font-size: 3em;
+    font-size: 4em;
+    padding: 0.5em;
+    margin-top: 0.5em;
     animation: colorShift 6s 1.25s ease-in-out alternate 1;
   }
   .circle{
@@ -20,34 +21,34 @@
   }
   .circle1{
     position: absolute;
-    @include position($left: 2.5em);
+    @include position($left: $circle1-pos);
     @include dimension($height, $width);
     animation: bounce 1s 1.25s cubic-bezier(.1,.25,.1,1) alternate 6;
   }
   .circle2{
     position: absolute;
-    @include position($left: 3em);
+    @include position($left: $circle2-pos);
     @include dimension($height, $width);
     animation: bounce 1s 1.5s cubic-bezier(.1,.25,.1,1) alternate 6;
   }
   .circle3{
     position: absolute;
-    @include position($left: 3.5em);
+    @include position($left: $circle3-pos);
     @include dimension($height, $width);
     animation: bounce 1s 1.75s cubic-bezier(.1,.25,.1,1) alternate 6;
   }
 
   @keyframes bounce {
     100% {
-      left: 10em;
+      left: 15em;
       background: $lavender;
     }
     10%  {
-      @include dimension(0.25em, 0.33em);
+      @include dimension(0.5em, 0.75em);
       background: $maroon;
     }
     0%  {
-      @include dimension(0.33em, 0.25em);
+      @include dimension(0.75em, 0.5em);
       background: $blue;
     }
   }
