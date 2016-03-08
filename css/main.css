@@ -53,18 +53,30 @@ table {
 a {
   text-decoration: none; }
 
+.container {
+  width: 75%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start; }
+
+.button1, .button2, .button3 {
+  width: 35%;
+  background: #f4f4f4;
+  transition: all 300ms; }
+
 .logo {
   display: flex;
   align-items: center;
   position: relative;
   height: 100px;
-  width: 600px;
-  background: white; }
+  width: 150px;
+  margin: 0 30px; }
   .logo h1 {
-    color: black;
+    color: #212121;
+    font-style: italic;
     font-family: 'Lobster Two', cursive;
     font-size: 3em;
-    animation: bounce-letter 1s 3s alternate 6; }
+    animation: colorShift 6s 1.25s ease-in-out alternate 1; }
   .logo .circle {
     position: absolute;
     position: absolute;
@@ -73,7 +85,7 @@ a {
     height: 0.25em;
     width: 0.25em;
     border-radius: 50%;
-    background: black; }
+    background: #212121; }
   .logo .circle1 {
     position: absolute;
     position: absolute;
@@ -101,16 +113,42 @@ a {
 @keyframes bounce {
   100% {
     left: 10em;
-    background: #369; }
+    background: #8f48a8; }
   10% {
     height: 0.25em;
     width: 0.33em;
     border-radius: 50%;
-    background: purple; }
+    background: #b0284c; }
   0% {
     height: 0.33em;
     width: 0.25em;
     border-radius: 50%;
-    background: chartreuse; } }
+    background: #443ea8; } }
+@keyframes colorShift {
+  100% {
+    color: #212121; }
+  50% {
+    color: #b0284c; }
+  0% {
+    color: #212121; } }
+.button {
+  border: none;
+  padding: 10px;
+  letter-spacing: 1px; }
+
+.button1:hover {
+  letter-spacing: 3px;
+  background: #b0284c;
+  color: #f4f4f4; }
+
+.button2:hover {
+  letter-spacing: 3px;
+  background: #8f48a8;
+  color: #f4f4f4; }
+
+.button3:hover {
+  letter-spacing: 3px;
+  background: #443ea8;
+  color: #f4f4f4; }
 
 /*# sourceMappingURL=main.css.map */

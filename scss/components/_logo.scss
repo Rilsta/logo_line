@@ -3,19 +3,20 @@
   align-items: center;
   position: relative;
   height: 100px;
-  width:600px;
-  background: white;
+  width:150px;
+  margin: 0 30px;
   h1{
-    color: black;
+    color: $black;
+    font-style: italic;
     font-family: 'Lobster Two', cursive;
     font-size: 3em;
-    animation: bounce-letter 1s 3s alternate 6;
+    animation: colorShift 6s 1.25s ease-in-out alternate 1;
   }
   .circle{
     position: absolute;
     @include position($top: $dot-position-height, $left: 7em);
     @include dimension($height, $width);
-    background: black;
+    background: $black;
   }
   .circle1{
     position: absolute;
@@ -39,15 +40,26 @@
   @keyframes bounce {
     100% {
       left: 10em;
-      background: #369;
+      background: $lavender;
     }
     10%  {
       @include dimension(0.25em, 0.33em);
-      background: purple;
+      background: $maroon;
     }
     0%  {
       @include dimension(0.33em, 0.25em);
-      background: chartreuse;
+      background: $blue;
+    }
+  }
+  @keyframes colorShift {
+    100% {
+      color: $black;
+    }
+    50%  {
+      color: $maroon;
+    }
+    0%  {
+      color: $black;
     }
   }
 }
