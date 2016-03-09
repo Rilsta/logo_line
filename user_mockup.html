@@ -9,20 +9,35 @@
   <title>User</title>
 </head>
   <body>
+      <div class="logo">
+        <h1>Q</h1>
+        <div class="circle1 circle"></div>
+        <div class="circle2 circle"></div>
+        <div class="circle3 circle"></div>
+      </div>
+
+      <div class="navbar">
+        <i class="fa fa-bars"></i>
+        <ul class="main-menu">
+          <li><a href="#">sign up</a></li>
+          <li><a href="#">restaurants</a></li>
+          <li><a href="#">users</a></li>
+        </ul>
+      </div>
+
     <div class="wrapper">
       <h1 class="title">Welcome, User!</h1>
+      <img class="user-pic" src="img/puppy.jpg" alt="" />
 
-      <p>
-        Your restaurants
-      </p>
-      <ul>
-        <li><a href="#">Name One</a></li>
-        <li><a href="#">Name Two</a></li>
-        <li><a href="#">Name Three</a></li>
+      <h2 class="title-secondary">Recently Q'd</h2>
+      <ul class="main-list">
+        <li><a href="#">Restaurant One</a></li>
+        <li><a href="#">Restaurant Two</a></li>
+        <li><a href="#">Restaurant Three</a></li>
       </ul>
 
       <h4>Add a restaurant to your
-      queue!</h4>
+      Q!</h4>
 
       <form action='/add_user' method='post'>
         <input id="restaurant_id" name="restaurant_id" type="hidden" value="$restaurant.getId()">
