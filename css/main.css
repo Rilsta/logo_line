@@ -50,6 +50,9 @@ table {
 *:after {
   box-sizing: border-box; }
 
+body {
+  background: #f4f4f4; }
+
 a {
   text-decoration: none; }
 
@@ -57,7 +60,8 @@ a {
   width: 75%;
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start; }
+  align-items: flex-start;
+  border: 1px solid red; }
 
 .button1, .button2, .button3 {
   width: 35%;
@@ -224,5 +228,22 @@ a {
   position: relative;
   background-image: url("../img/cafe.jpg");
   background-size: cover; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.title {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em; }
+
+.restaurant-form {
+  display: flex;
+  flex-flow: column wrap; }
+  .restaurant-form .address-form {
+    display: flex;
+    flex-flow: column; }
+    .restaurant-form .address-form input {
+      margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */

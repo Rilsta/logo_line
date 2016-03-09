@@ -1,0 +1,23 @@
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title{
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em;
+}
+
+.restaurant-form{
+  display: flex;
+  flex-flow: column wrap;
+  .address-form{
+    display: flex;
+    flex-flow: column;
+    label{
+    }
+    input{
+      margin: 10px;
+    }
+  }
+}
