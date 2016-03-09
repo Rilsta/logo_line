@@ -51,8 +51,9 @@ table {
   box-sizing: border-box; }
 
 body {
-  background: #f4f4f4;
-  font-family: 'Arimo', sans-serif; }
+  background: #212121;
+  font-family: 'Arimo', sans-serif;
+  color: #f4f4f4; }
 
 a {
   text-decoration: none; }
@@ -76,6 +77,14 @@ a {
   margin: 5px;
   color: #f4f4f4;
   text-align: center;
+  text-shadow: 1px 1px #212121;
+  letter-spacing: 1px; }
+
+.restaurant-form .address-form input, .restaurant-form .address-form button {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  color: #f4f4f4;
   text-shadow: 1px 1px #212121;
   letter-spacing: 1px; }
 
@@ -170,7 +179,7 @@ a {
     height: 0.75em;
     width: 0.5em;
     border-radius: 50%;
-    background: #443ea8; } }
+    background: #4187b4; } }
 @keyframes colorShift {
   100% {
     color: #f4f4f4; }
@@ -195,7 +204,7 @@ a {
 
 .button3:hover {
   letter-spacing: 3px;
-  background: #443ea8;
+  background: #4187b4;
   color: #f4f4f4; }
 
 .login-form {
@@ -218,10 +227,10 @@ a {
       background: rgba(143, 72, 168, 0.7); }
   .login-form .sign-in-button {
     width: 25%;
-    background: rgba(68, 62, 168, 0.5);
+    background: rgba(65, 135, 180, 0.5);
     transition: all 300ms; }
     .login-form .sign-in-button:hover {
-      background: rgba(68, 62, 168, 0.7); }
+      background: rgba(65, 135, 180, 0.7); }
 
 .hero {
   height: 100vh;
@@ -240,16 +249,25 @@ a {
   margin: 10px; }
 
 .sub-title {
-  font-size: 1.1em;
-  font-weight: bold; }
+  margin: 1em; }
 
 .restaurant-form {
-  display: flex;
-  flex-flow: column wrap; }
+  display: flex; }
   .restaurant-form .address-form {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 0.5em; }
+    .restaurant-form .address-form label {
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin: 5px; }
     .restaurant-form .address-form input {
-      margin: 10px; }
+      width: 80%;
+      background: rgba(143, 72, 168, 0.5); }
+    .restaurant-form .address-form button {
+      width: 50%;
+      background: rgba(65, 135, 180, 0.5); }
 
 /*# sourceMappingURL=main.css.map */

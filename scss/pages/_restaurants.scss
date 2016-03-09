@@ -10,20 +10,31 @@
 }
 
 .sub-title{
-  font-size: 1.1em;
-  font-weight: bold;
+  margin: 1em;
 }
 
 .restaurant-form{
   display: flex;
-  flex-flow: column wrap;
   .address-form{
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 0.5em;
     label{
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin: 5px;
     }
     input{
-      margin: 10px;
+      @extend %form-sizing;
+      width: 80%;
+      background: rgba($lavender, 0.5);
+    }
+    button{
+      @extend %form-sizing;
+      width: 50%;
+      background: rgba($blue, 0.5);
     }
   }
 }
