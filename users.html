@@ -6,23 +6,46 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic|Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>List of Users</title>
   </head>
   <body>
-    <h1>User List</h1>
+    <div class="logo">
+      <h1>Q</h1>
+      <div class="circle1 circle"></div>
+      <div class="circle2 circle"></div>
+      <div class="circle3 circle"></div>
+    </div>
 
-<form action="/users" method="post">
-  <label for="user_name">Add a new user:</label>
-  <input id="user_name" name="user_name" type="text" required>
-  <button type="submit">Add User</button>
-</form>
+    <div class="navbar">
+      <i class="fa fa-bars"></i>
+      <ul class="main-menu">
+        <li><a href="#">sign up</a></li>
+        <li><a href="#">restaurants</a></li>
+        <li><a href="#">users</a></li>
+      </ul>
+    </div>
 
-<h3>All users:</h3>
-  <li><a href="/users/$user.getId()">Derp</a></li>
-  <li><a href="/users/$user.getId()">Derp</a></li>
-  <li><a href="/users/$user.getId()">Derp</a></li>
+    <div class="wrapper">
+      <h1 class="title">Users</h1>
 
+      <ul class="main-list">
+        <li><a href="/users/$user.getId()">Derp</a></li>
+        <li><a href="/users/$user.getId()">Derp</a></li>
+        <li><a href="/users/$user.getId()">Derp</a></li>
+      </ul>
 
-<p><a href='/'>Home</a></p>
+      <i class="fa fa-chevron-down"></i>
+      <i class="fa fa-chevron-up"></i>
+
+      <div class="main-form">
+        <form class="info-form" action="/users" method="post">
+          <label for="user_name">New User Name</label>
+          <input id="user_name" name="user_name" type="text" required>
+          <button type="submit"><i class="fa fa-plus"></i></button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

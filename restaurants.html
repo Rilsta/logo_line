@@ -6,6 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic|Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>List of Restaurants</title>
   </head>
   <body>
@@ -25,13 +27,22 @@
         <li><a href="#">users</a></li>
       </ul>
     </div>
+
       <div class="wrapper">
+
         <h1 class="title">Restaurants</h1>
 
-        <h2 class="sub-title">Add a new restaurant</h2>
+        <ul class="main-list">
+          <li><a href="/restaurants/$restaurant.getId()">Restaurant 1</a></li>
+          <li><a href="/restaurants/$restaurant.getId()">Restaurant 2</a></li>
+          <li><a href="/restaurants/$restaurant.getId()">Restaurant 3</a></li>
+        </ul>
 
-        <form class="restaurant-form"  action="/restaurants" method="post">
-          <div class="address-form">
+        <i class="fa fa-chevron-down"></i>
+        <i class="fa fa-chevron-up"></i>
+
+        <form class="main-form"  action="/restaurants" method="post">
+          <div class="info-form">
             <label for="restaurant_name">Restaurant Name</label>
             <input  id="restaurant_name" name="restaurant_name" type="text" required>
 
@@ -49,15 +60,9 @@
 
             <label for="zip">Zip</label>
             <input id="zip" name="zip" type="text" required>
-            <button type="submit">Add Restaurant</button>
+            <button type="submit"><i class="fa fa-plus"></i></button>
           </div>
         </form>
-
-        <ul>
-          <li><a href="/restaurants/$restaurant.getId()">Restaurant 1</a></li>
-          <li><a href="/restaurants/$restaurant.getId()">Restaurant 2</a></li>
-          <li><a href="/restaurants/$restaurant.getId()">Restaurant 3</a></li>
-        </ul>
       </div>
     <!-- </div> -->
 
