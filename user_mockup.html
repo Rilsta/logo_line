@@ -42,19 +42,17 @@
       <form action='/add_user' method='post'>
         <input id="restaurant_id" name="restaurant_id" type="hidden" value="$restaurant.getId()">
         <label for="user_id">Select a restaurant:</label>
-        <select id='user_id' name='user_id' type='text'>
+        <select class="button button3" id='user_id' name='user_id' type='text'>
           <option>Name One</option>
           <option>Name Two</option>
           <option>Name Three</option>
         </select>
-        <button type='submit'>Add User</button>
+        <button class="button2 button" type='submit'>Add User</button>
       </form>
 
-      <p><a href="/restaurant/$restaurant.getId()/edit">Edit User</a></p>
+      <p><button class="button1 button" type="button" name="button"><a href="/restaurant/$restaurant.getId()/edit">Edit User</a></button></p>
 
-      <form action="/restaurants/$restaurant.getId()/delete" method="post"><input id="restaurant_id" name="restaurant_id" type="hidden" value="$restaurant.getId()"><button type="submit">Delete User</button></form>
-
-      <p><a href='/'>Home</a></p>
+      <form action="/restaurants/$restaurant.getId()/delete" method="post"><input id="restaurant_id" name="restaurant_id" type="hidden" value="$restaurant.getId()"><button class="button1 button" type="submit">Delete User</button></form>
 
     </div>
   </body>
