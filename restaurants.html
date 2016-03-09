@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic|Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
     <title>List of Restaurants</title>
@@ -13,26 +13,26 @@
       <div class="wrapper">
         <h1 class="title">Restaurants</h1>
 
-        <p>Add a new restaurant:</p>
+        <h2 class="sub-title">Add a new restaurant</h2>
 
         <form class="restaurant-form"  action="/restaurants" method="post">
           <div class="address-form">
-            <label for="restaurant_name">Restaurant Name:</label>
+            <label for="restaurant_name">restaurant name</label>
             <input  id="restaurant_name" name="restaurant_name" type="text" required>
 
-            <label for="phone">Phone Number:</label>
+            <label for="phone">phone number</label>
             <input id="phone" name="phone" type="text" required>
 
-            <label for="street">Street Address:</label>
+            <label for="street">Street Address</label>
             <input id="street" name="street" type="text" required>
 
-            <label for="city">City:</label>
+            <label for="city">City</label>
             <input id="city" name="city" type="text" required>
 
-            <label for="state">State:</label>
+            <label for="state">State</label>
             <input id="state" name="state" type="text" required>
 
-            <label for="zip">Zip:</label>
+            <label for="zip">Zip</label>
             <input id="zip" name="zip" type="text" required>
           </div>
           <button type="submit">Add Restaurant</button>

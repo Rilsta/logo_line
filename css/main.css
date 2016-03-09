@@ -51,7 +51,8 @@ table {
   box-sizing: border-box; }
 
 body {
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  font-family: 'Arimo', sans-serif; }
 
 a {
   text-decoration: none; }
@@ -235,7 +236,12 @@ a {
 
 .title {
   font-family: 'Lobster Two', cursive;
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 10px; }
+
+.sub-title {
+  font-size: 1.1em;
+  font-weight: bold; }
 
 .restaurant-form {
   display: flex;
